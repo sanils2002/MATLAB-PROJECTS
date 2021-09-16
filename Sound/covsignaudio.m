@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-%To convulate 2 audio signals
+%To convulate 2 audio signals...
 
 [sig1, fs1] = audioread('Sample1.wav')
 [sig2, fs2] = audioread('Sample2.wav')
