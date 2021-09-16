@@ -2,8 +2,10 @@ clear all;
 close all;
 clc;
 
-[sig1, fs1] = audioread('Indian National Anthem.wav')
-[sig2, fs2] = audioread('Sri Lankan National Anthem.wav')
+%To convulate 2 audio signals
+
+[sig1, fs1] = audioread('Sample1.wav')
+[sig2, fs2] = audioread('Sample2.wav')
 
 if fs1>fs2
   t=-ceil(fs1):ceil(fs1);
@@ -20,7 +22,7 @@ Y = zeros(1, length(t));
 subplot(3,1,1);
 plot(t,X,'r','linewidth',2);
 grid on;
-title('Indian National Anthem');
+title('Sample1');
 xlabel('Time');
 ylabel('Amplitude');
 
@@ -34,13 +36,13 @@ endfor
 subplot(3,1,2);
 plot(t,H,'b','linewidth',2);
 grid on;
-title('Sri Lankan National Anthem');
+title('Sample2');
 xlabel('Time');
 ylabel('Amplitude');
 
 subplot(3,1,3);
 plot(t,Y,'m','linewidth',2);
 grid on;
-title('Convoluted Anthems');
+title('Convoluted Audio');
 xlabel('Time');
 ylabel('Amplitude');
