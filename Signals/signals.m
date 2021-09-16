@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-%To plot some signals by input-method
+%To plot some signals by input-method...
 
 s1 = 'Input e:';
 e = input(s1);
