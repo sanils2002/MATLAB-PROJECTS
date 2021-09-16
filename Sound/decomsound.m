@@ -2,6 +2,8 @@ clear all;
 close all;
 clc;
 
+%To decompose an audio signal into odd and even components...
+
 p = 'Time for recording:';
 t = input(p);
 a = audiorecorder(8000, 8, 1);
