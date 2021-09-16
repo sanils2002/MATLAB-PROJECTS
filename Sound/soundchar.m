@@ -2,6 +2,8 @@ clear all;
 close all;
 clc;
 
+%To modify an audio signal...
+
 a = audiorecorder(8000, 8, 1);
 p = 'Time for recording:';
 t = input(p);
