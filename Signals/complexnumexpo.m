@@ -2,6 +2,8 @@ clear all;
 close all;
 clc;
 
+%Represent complex numbers into complex exponentials
+
 th=-pi:0.001:pi;
 x=exp(j.*th);
 a=real(x);
