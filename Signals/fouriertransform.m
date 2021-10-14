@@ -17,12 +17,6 @@ for w=-n:n
   i=i+1;
 endfor
 
-l=1;
-p=-n:n;
-i=1;
-x1=[];
-k=1;
-
 subplot(1,2,1);
 stem((-n:n), abs(A));
 title('Magnitude');
