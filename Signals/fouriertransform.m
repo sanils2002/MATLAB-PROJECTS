@@ -2,7 +2,7 @@ clear all;
 close all;
 clc;
 
-syms t,w;
+syms t w;
 x=input('Function in t:');
 y=inline(x);
 Y1=@(t,w)y(t).*exp(-j*w*t);
