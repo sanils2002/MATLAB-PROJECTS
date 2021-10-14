@@ -28,9 +28,3 @@ stem((-n:n), angle(A));
 title('Phase');
 xlabel('w');
 ylabel('Phase X(w)');
-
-subplot(3,1,3);
-stem((0:0.1:10), x1);
-title('Phase');
-xlabel('k');
-ylabel('Phase a(k)');
