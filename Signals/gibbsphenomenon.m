@@ -15,7 +15,7 @@ for k=-n:n
   x=@(t)(y(t).*exp(-j*k*w*t));
   a(i)=integral(x,0,T)/T;
   i=i+1;
-endfor
+end
 
 l=1;
 p=-n:n;
@@ -27,8 +27,8 @@ for t=0:0.1:10
   x1(k)=0;
   for i = l:2*n+1
     x1(k)=x1(k)+a(i)*exp(-j*k*w*t);
-  endfor
-endfor
+  end
+end
 
 subplot(3,1,1);
 stem((-n:n), abs(a));
