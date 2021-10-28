@@ -15,7 +15,7 @@ i=1;
 for w=-n:n
   A(i)=X(w);
   i=i+1;
-endfor
+end
 
 subplot(1,2,1);
 stem((-n:n), abs(A));
