@@ -21,7 +21,7 @@ imshow(mat2gray(o))
 title('Filter 1');
 
 for i=1:512
-  o1=[o; conv(b(i,:),h)];
+  o1=[o1; conv(b(i,:),h)];
 end
 
 subplot(1,5,3);
