@@ -17,7 +17,7 @@ for k=-n:n
   x=@(t)(y(t).*exp(-j*k*w*t));
   a(i)=integral(x,0,T)/T;
   i=i+1;
-endfor
+end
 
 subplot(2,1,1);
 plot((-n:n),abs(a));
