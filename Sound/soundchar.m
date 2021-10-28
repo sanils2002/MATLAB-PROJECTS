@@ -67,7 +67,7 @@ while (x)
       xlabel('Time');
       ylabel('Amplitude');
       break;
-    endif
+    end
    break;
    
    elseif x==2
@@ -112,7 +112,7 @@ while (x)
       xlabel('Time');
       ylabel('Amplitude');
       break;
-    endif
+    end
    break;
    
  else 
@@ -120,6 +120,6 @@ while (x)
    disp(p4);
    x = input(prompt);
    break;
- endif
+ end
 end
    
