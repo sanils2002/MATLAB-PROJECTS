@@ -35,7 +35,7 @@ for i=1:l-1
   q1=y1(t=l-i);
   r1=p1+q1/2;
   y2=[y2 r1];
-endfor
+end
 figure;
 plot(y2);
 grid on;
@@ -49,7 +49,7 @@ for i=1:l-1
   q2=y1(t=l-i);
   r2=p2-q2/2;
   y3=[y3 r2];
-endfor
+end
 figure;
 plot(y3);
 grid on;
