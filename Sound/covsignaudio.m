@@ -11,7 +11,7 @@ if fs1>fs2
   t=-ceil(fs1):ceil(fs1);
 elseif fs2>fs1
   t=-ceil(fs2):ceil(fs2);
-endif
+end
 
 X = zeros(1, length(t));
 H = zeros(1, length(t));
@@ -31,7 +31,7 @@ for i=fs1:fs2
   H1 = circshift(H1,[0,i]);
   a = H1.*X;
   Y(t==i) = sum(a);
-endfor
+end
 
 subplot(3,1,2);
 plot(t,H,'b','linewidth',2);
